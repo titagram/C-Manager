@@ -1,0 +1,75 @@
+services:
+    laravel.test:
+        build:
+            context: './vendor/laravel/sail/runtimes/8.5'
+            dockerfile: Dockerfile
+            args:
+                WWWGROUP: '${WWWGROUP}'
+        image: 'sail-8.5/app'
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
+        ports:
+            - '${APP_PORT:-80}:80'
+            - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
+        environment:
+            WWWUSER: '${WWWUSER}'
+            LARAVEL_SAIL: 1
+            XDEBUG_MODE: '${SAIL_XDEBUG_MODE:-off}'
+            XDEBUG_CONFIG: '${SAIL_XDEBUG_CONFIG:-client_host=host.docker.internal}'
+            IGNITION_LOCAL_SITES_PATH: '${PWD}'
+        volumes:
+            - '.:/var/www/html'
+        networks:
+            - sail
+            - traefik_default
+        depends_on:
+            - pgsql
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.cmanager-portfolio.rule=Host(`staging.cmanager.test`)"
+            - "traefik.http.routers.cmanager-portfolio.entrypoints=websecure"
+            - "traefik.http.routers.cmanager-portfolio.tls=true"
+            - "traefik.http.routers.cmanager-portfolio.tls.certresolver=le"
+            - "traefik.http.routers.cmanager-portfolio.middlewares=cmanager-portfolio-auth"
+            - "traefik.http.middlewares.cmanager-portfolio-auth.basicauth.users=portfolio-demo:$$apr1$$MSm5T1n1$$0EI8i869bvcdtTER7duhQ/"
+            - "traefik.http.services.cmanager-portfolio.loadbalancer.server.port=80"
+            - "traefik.docker.network=traefik_default"
+            # HTTP to HTTPS redirect
+            - "traefik.http.routers.cmanager-portfolio-http.rule=Host(`staging.cmanager.test`)"
+            - "traefik.http.routers.cmanager-portfolio-http.entrypoints=web"
+            - "traefik.http.routers.cmanager-portfolio-http.middlewares=cmanager-portfolio-https-redirect"
+            - "traefik.http.middlewares.cmanager-portfolio-https-redirect.redirectscheme.scheme=https"
+            - "traefik.http.middlewares.cmanager-portfolio-https-redirect.redirectscheme.permanent=true"
+    pgsql:
+        image: 'postgres:18-alpine'
+        ports:
+            - '${FORWARD_DB_PORT:-5432}:5432'
+        environment:
+            PGPASSWORD: '${DB_PASSWORD:-secret}'
+            POSTGRES_DB: '${DB_DATABASE}'
+            POSTGRES_USER: '${DB_USERNAME}'
+            POSTGRES_PASSWORD: '${DB_PASSWORD:-secret}'
+        volumes:
+            - 'sail-pgsql:/var/lib/postgresql'
+            - './vendor/laravel/sail/database/pgsql/create-testing-database.sql:/docker-entrypoint-initdb.d/10-create-testing-database.sql'
+        networks:
+            - sail
+        healthcheck:
+            test:
+                - CMD
+                - pg_isready
+                - '-q'
+                - '-d'
+                - '${DB_DATABASE}'
+                - '-U'
+                - '${DB_USERNAME}'
+            retries: 3
+            timeout: 5s
+networks:
+    sail:
+        driver: bridge
+    traefik_default:
+        external: true
+volumes:
+    sail-pgsql:
+        driver: local

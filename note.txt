@@ -1,0 +1,31 @@
+La rotta /lotti/{id} invoca app/Livewire/Forms/LottoProduzioneForm.php con la relativa view.
+C'è da capire come mai la funzione Render() esegue una query su Costruzione::active(), però le costruzioni risultanti sono soltanto una.
+Ho controllato in Prodotti. Noto che in app/Livewire/Tables/ProdottiTable.php non viene usata la classe Costruzione, ma solo Prodotto filtrato per Categoria::costruzioni().
+Questo è il vecchio metodo: Prodotti e Materiali sono entità diverse con attributi diversi. Nella tab prodotti è giusto che ci siano i prodotti della relativa categoria,
+nella tab costruzioni ci dovrebbero essere le Costruzioni. 
+A questo punto va modificato anche app/Enums/Categoria.php
+-- fatto--
+
+Esiste il Model Costruzione. Tuttavia gli attributi non sono sufficienti.
+Dobbiamo definire innanzitutto le tipologie di costruzioni. 
+Le tipologie sono: Cassa, Gabbia, Legaccio, Bancale.
+Queste tipologie sono definite in app/Enums/TipoCostruzione.php, e fin qui tutto bene.
+Vanno capite le caratteristiche geometriche dei vari tipi di costruzioni.
+Chiaro che una cassa ha 4 lati e un fondo. Una gabbia ha 4 lati e un fondo. Un legaccio ha 4 lati e un fondo. Per ora possiamo ignorare i bancali.
+Quindi, le caratteristiche geometriche sono: lunghezza, larghezza, altezza.
+La cosa importante è capire che "Costruzione" è una entità solamente geometrica. Non ha un costo, non ha un prezzo, non ha un peso, non ha un volume.
+Questi verranno specificati nel Lotto di Produzione, in base al materiale utilizzato.
+L'altra cosa da capire è come gestire la creazione di una nuova costruzione, va specificato il numero di lati? Questo è un bel dilemma.
+Oppure ad esempio quando si parla di fondo rinforzato, questo è un attributo della costruzione o del lotto di produzione?
+Inoltre andrà aggiornato il seeder, per ora teniamo solo i vari tipi di Cassa.
+
+Oppure potremmo creare un'entità Lato, associata n:1 alla Costruzione, e far si che materiale sia associato 1:n al Lato.
+Tendenzialmente una costruzione ha 4 lati uguali e fondo potenzialmente diverso, ma poterbbe capitare che per un lato si usi un materiale diverso. 
+In realtà, ha comunque più senso ragionare in modo granulare, la semplificazione qualora una cassa avesse 4 lati uguali avverrà a livello di UI, non a livello di database.
+Quindi al momento dell'inserimento di una nuova costruzione, l'utente specificherà il numero di lati, poi lunghezza altezza e larghezza verranno specificati nel lotto di produzione,
+mentre lo spessore è un attributo del materiale.
+
+Così facendo potremmo creare anche l'entità "Asse", per poter essere più granulari nella composizione (tipo nella creazione di bancali)- L'entità Asse non dovrebbe aver bisogno di molti attributi,
+dal momento che le sue caratteristiche geometriche verranno specificate nel lotto di produzione.
+
+Inoltre potremmo definire un'entità "Chiodi", ecc. per poter essere ancora più granulari. 

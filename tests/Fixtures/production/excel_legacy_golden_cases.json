@@ -1,0 +1,625 @@
+{
+  "generated_from": "excel_analysis/excel_biff_analysis.json",
+  "cases": [
+    {
+      "id": "80x80x120__lotto_131_25",
+      "source": "excel_analysis/excel_biff_analysis.json::80x80x120 - LOTTO 131_25.xls::Foglio1",
+      "variant": "standard",
+      "sheet_label": "CASSA SP 25 FONDO 40",
+      "dimensions_cm": {
+        "L": 80.0,
+        "W": 80.0,
+        "H": 120.0
+      },
+      "rows": [
+        {
+          "row": 8,
+          "A_raw": 85.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 17.0,
+          "E_volume_m3": 0.036125
+        },
+        {
+          "row": 9,
+          "A_raw": 90.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 24.0,
+          "E_volume_m3": 0.054
+        },
+        {
+          "row": 10,
+          "A_raw": 80.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 24.0,
+          "E_volume_m3": 0.048
+        },
+        {
+          "row": 11,
+          "A_raw": 85.0,
+          "B_raw": 40.0,
+          "C_raw": 10.0,
+          "D_raw": 3.0,
+          "E_volume_m3": 0.0102
+        },
+        {
+          "row": 12,
+          "A_raw": 133.0,
+          "B_raw": 25.0,
+          "C_raw": 8.0,
+          "D_raw": 14.0,
+          "E_volume_m3": 0.03724
+        },
+        {
+          "row": 13,
+          "A_raw": 90.0,
+          "B_raw": 25.0,
+          "C_raw": 8.0,
+          "D_raw": 3.0,
+          "E_volume_m3": 0.0054
+        },
+        {
+          "row": 14,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 15,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 16,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 17,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 18,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 19,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 20,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        }
+      ],
+      "expected": {
+        "volume_total_m3": 0.19096499999999997,
+        "price_per_m3": 545.0,
+        "price_total": 104.07592499999998,
+        "weight_kg_per_m3": 360.0,
+        "weight_total_kg": 68.74739999999998
+      }
+    },
+    {
+      "id": "80x80x80__lotto_131_25",
+      "source": "excel_analysis/excel_biff_analysis.json::80x80x80 - LOTTO 131_25.xls::Foglio1",
+      "variant": "standard",
+      "sheet_label": "CASSA SP 25 FONDO 40",
+      "dimensions_cm": {
+        "L": 80.0,
+        "W": 80.0,
+        "H": 80.0
+      },
+      "rows": [
+        {
+          "row": 8,
+          "A_raw": 85.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 17.0,
+          "E_volume_m3": 0.036125
+        },
+        {
+          "row": 9,
+          "A_raw": 90.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 16.0,
+          "E_volume_m3": 0.036
+        },
+        {
+          "row": 10,
+          "A_raw": 80.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 16.0,
+          "E_volume_m3": 0.032
+        },
+        {
+          "row": 11,
+          "A_raw": 85.0,
+          "B_raw": 40.0,
+          "C_raw": 10.0,
+          "D_raw": 3.0,
+          "E_volume_m3": 0.0102
+        },
+        {
+          "row": 12,
+          "A_raw": 93.0,
+          "B_raw": 25.0,
+          "C_raw": 8.0,
+          "D_raw": 14.0,
+          "E_volume_m3": 0.02604
+        },
+        {
+          "row": 13,
+          "A_raw": 90.0,
+          "B_raw": 25.0,
+          "C_raw": 8.0,
+          "D_raw": 3.0,
+          "E_volume_m3": 0.0054
+        },
+        {
+          "row": 14,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 15,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 16,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 17,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 18,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 19,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 20,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        }
+      ],
+      "expected": {
+        "volume_total_m3": 0.14576499999999998,
+        "price_per_m3": 545.0,
+        "price_total": 79.44192499999998,
+        "weight_kg_per_m3": 360.0,
+        "weight_total_kg": 52.47539999999999
+      }
+    },
+    {
+      "id": "80x90x65__lotto_144_24",
+      "source": "excel_analysis/excel_biff_analysis.json::80x90x65 - LOTTO 144_24.xls::Foglio1",
+      "variant": "standard",
+      "sheet_label": "CASSA SP 25 FONDO 40",
+      "dimensions_cm": {
+        "L": 80.0,
+        "W": 90.0,
+        "H": 65.0
+      },
+      "rows": [
+        {
+          "row": 8,
+          "A_raw": 85.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 19.0,
+          "E_volume_m3": 0.040375
+        },
+        {
+          "row": 9,
+          "A_raw": 90.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 13.0,
+          "E_volume_m3": 0.02925
+        },
+        {
+          "row": 10,
+          "A_raw": 90.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 13.0,
+          "E_volume_m3": 0.02925
+        },
+        {
+          "row": 11,
+          "A_raw": 95.0,
+          "B_raw": 40.0,
+          "C_raw": 10.0,
+          "D_raw": 3.0,
+          "E_volume_m3": 0.0114
+        },
+        {
+          "row": 12,
+          "A_raw": 78.0,
+          "B_raw": 25.0,
+          "C_raw": 8.0,
+          "D_raw": 14.0,
+          "E_volume_m3": 0.02184
+        },
+        {
+          "row": 13,
+          "A_raw": 100.0,
+          "B_raw": 25.0,
+          "C_raw": 8.0,
+          "D_raw": 3.0,
+          "E_volume_m3": 0.006
+        },
+        {
+          "row": 14,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 15,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 16,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 17,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 18,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 19,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 20,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        }
+      ],
+      "expected": {
+        "volume_total_m3": 0.13811500000000002,
+        "price_per_m3": 580.0,
+        "price_total": 80.1067,
+        "weight_kg_per_m3": 360.0,
+        "weight_total_kg": 49.7214
+      }
+    },
+    {
+      "id": "84x43x55__lotto_307_23",
+      "source": "excel_analysis/excel_biff_analysis.json::84x43x55 - LOTTO 307_23.xls::Foglio1",
+      "variant": "standard",
+      "sheet_label": "CASSA SP 25 FONDO 40",
+      "dimensions_cm": {
+        "L": 84.0,
+        "W": 43.0,
+        "H": 55.0
+      },
+      "rows": [
+        {
+          "row": 8,
+          "A_raw": 89.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 10.0,
+          "E_volume_m3": 0.02225
+        },
+        {
+          "row": 9,
+          "A_raw": 94.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 11.0,
+          "E_volume_m3": 0.02585
+        },
+        {
+          "row": 10,
+          "A_raw": 43.0,
+          "B_raw": 25.0,
+          "C_raw": 10.0,
+          "D_raw": 11.0,
+          "E_volume_m3": 0.011825
+        },
+        {
+          "row": 11,
+          "A_raw": 48.0,
+          "B_raw": 40.0,
+          "C_raw": 10.0,
+          "D_raw": 2.0,
+          "E_volume_m3": 0.00384
+        },
+        {
+          "row": 12,
+          "A_raw": 68.0,
+          "B_raw": 25.0,
+          "C_raw": 8.0,
+          "D_raw": 11.0,
+          "E_volume_m3": 0.01496
+        },
+        {
+          "row": 13,
+          "A_raw": 53.0,
+          "B_raw": 25.0,
+          "C_raw": 8.0,
+          "D_raw": 2.0,
+          "E_volume_m3": 0.00212
+        },
+        {
+          "row": 14,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 15,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 16,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 17,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 18,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 19,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 20,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        }
+      ],
+      "expected": {
+        "volume_total_m3": 0.080845,
+        "price_per_m3": 600.0,
+        "price_total": 48.507,
+        "weight_kg_per_m3": 360.0,
+        "weight_total_kg": 29.1042
+      }
+    },
+    {
+      "id": "legacci_180",
+      "source": "excel_analysis/excel_biff_analysis.json::LEGACCI 180.xls::Foglio1",
+      "variant": "legacci",
+      "sheet_label": "CASSA SP 25 FONDO 40",
+      "dimensions_cm": {
+        "L": 224.0,
+        "W": 60.0,
+        "H": null
+      },
+      "rows": [
+        {
+          "row": 7,
+          "A_raw": 224.0,
+          "B_raw": 60.0,
+          "C_raw": 8.0,
+          "D_raw": 4.0,
+          "E_volume_m3": 0.043008
+        },
+        {
+          "row": 8,
+          "A_raw": 88.0,
+          "B_raw": 60.0,
+          "C_raw": 8.0,
+          "D_raw": 4.0,
+          "E_volume_m3": 0.016896
+        },
+        {
+          "row": 9,
+          "A_raw": 60.0,
+          "B_raw": 35.0,
+          "C_raw": 8.0,
+          "D_raw": 1.0,
+          "E_volume_m3": 0.00168
+        },
+        {
+          "row": 10,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 11,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 12,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 13,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 14,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 15,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 16,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 17,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 18,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        },
+        {
+          "row": 19,
+          "A_raw": 0.0,
+          "B_raw": 0.0,
+          "C_raw": 0.0,
+          "D_raw": 0.0,
+          "E_volume_m3": 0.0
+        }
+      ],
+      "expected": {
+        "volume_total_m3": 0.061584,
+        "price_per_m3": 419.0,
+        "price_total": 25.803696,
+        "weight_kg_per_m3": 360.0,
+        "weight_total_kg": 22.17024
+      }
+    }
+  ]
+}
