@@ -2,6 +2,8 @@
 
 Gestionale demo sviluppato in Laravel 12 per la gestione di imballaggi industriali in legno: preventivi, ordini, lotti di produzione, magazzino materiali, tracciabilita FITOK e distinte base.
 
+Licenza: MIT. Vedi il file `LICENSE`.
+
 
 ## Stack
 
